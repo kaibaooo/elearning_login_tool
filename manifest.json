@@ -7,6 +7,11 @@
         "default_popup": "index.html",
         "default_icon": "shrimp.png"
     },
+    "content_scripts": [{
+        "js": ["content.js"],
+        "run_at": "document_idle",
+        "matches": ["http://elearning.nuk.edu.tw/*"]
+    }],
     "background": {
         "scripts": ["backend.js"],
         "persistent": false
